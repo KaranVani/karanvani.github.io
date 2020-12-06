@@ -30,6 +30,7 @@ p,a {
 
   /* Full height */
   height: 100%;
+  width: auto;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
