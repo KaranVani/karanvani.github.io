@@ -167,5 +167,5 @@ p,a {
 }
 
 @media screen and (max-height: 450px) {
-	.parallax {width:0%;}
+	.parallax {width:50%;}
 }
