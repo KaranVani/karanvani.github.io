@@ -1,5 +1,16 @@
 @charset "utf-8";
 /*  -----------------The Body, Html, some text -------------------------	*/
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    
+    scroll-behavior: smooth;
+}
+
 html{
 	scroll-behavior: smooth;
 }
@@ -49,6 +60,9 @@ p,a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: grid;
+  justify-content: center;
+  align-items: end;
 }
 
 /*  ---------------------The sidebar menu ---------------------	*/
@@ -80,7 +94,7 @@ p,a {
 	color: rgba(219,104,36,1.00);
 	opacity: 1;
 }
-.sidebar a,.sidebar img:hover {
+.sidebar img:hover {
   color: #f1f1f1;
   opacity: 0.5;
 }
@@ -102,22 +116,48 @@ p,a {
   border: none;
   color: rgba(219,104,36,1.00);
   margin-top: 8px;
+  margin-left: 8px;
 }
 .openbtn:hover {
   background-color: #444;
 }
 
 .scrolldown{
-	background-color: #111;
 	color: rgba(219,104,36,1.00);
 	padding: 10px 15px;
-	margin-left: 49%;
-	margin-top: 45%;
-	cursor: pointer;
 	border: none;
 	font-size: 20px;
 }
 
+.scrolldown {
+  padding-top: 20px;
+  padding-bottom: 0px;
+  animation: MoveUpDown 1s ease infinite;
+  text-decoration: none;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  20% {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+}
+
+.show{
+	opacity: 1;
+}
+
+.mid {
+	opacity: 0.5;
+}
+
+.hide{
+	opacity: 0;
+}
 
  /*  -------------------   Some media Query  -----------------------	*/
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
