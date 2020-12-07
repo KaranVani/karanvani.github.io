@@ -28,6 +28,7 @@ h1,h2,h3 {
   font-family: ff-tisa-sans-web-pro, sans-serif;
   font-style: normal;
   font-weight: 100;
+  font-size: 40px;
 }
 h1 {
 	text-align: center;
@@ -123,7 +124,7 @@ p,a {
 }
 
 .scrolldown{
-	color: rgba(219,104,36,1.00);
+	color: black;
 	padding: 10px 15px;
 	border: none;
 	font-size: 20px;
@@ -132,7 +133,7 @@ p,a {
 .scrolldown {
   padding-top: 20px;
   padding-bottom: 0px;
-  animation: MoveUpDown 1s ease infinite;
+  animation: MoveUpDown 1.5s ease infinite;
   text-decoration: none;
 }
 
@@ -149,14 +150,18 @@ p,a {
 
 .show{
 	opacity: 1;
+	transition: 0.5s;
 }
 
 .mid {
 	opacity: 0.5;
+	transition: 0.5s;
 }
 
 .hide{
 	opacity: 0;
+	transition: 0.5s;
+
 }
 
  /*  -------------------   Some media Query  -----------------------	*/
