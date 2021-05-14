@@ -16,7 +16,6 @@ html{
 }
 body, html {
   height: 100%; 
-  background-image: url("images/background.png");
   margin:0;padding:0;border:0;
 }
 
@@ -24,153 +23,10 @@ body {
 	margin:0;
 }
 
-h1,h2,h3 {
-  font-family: ff-tisa-sans-web-pro, sans-serif;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 40px;
-}
-h1 {
-	text-align: center;
-	color: black;
-}
-
-p,a {
-  font-family: ff-tisa-sans-web-pro, sans-serif;
-  font-style: normal;
-  font-weight: 100;
-}
-
-#about,#education,#skills,#contact {
-  transition: margin-left 0.5s; 
-  padding: 20px;
-}
-#main{
-	background-image: url("images/background.png");
-}
-/*  ---------------------The Parallex image ---------------------	*/
-
-.parallax {
-  /* The image used */
-  background-image: url("images/bg2.jpg");
-  /* Full height */
-  height: 100%;
-  width: auto;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: grid;
-  justify-content: center;
-  align-items: end;
-}
-
-/*  ---------------------The sidebar menu ---------------------	*/
-.sidebar {
-    height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0;
-  left: 0;
-  background-color: #111; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-}
-
-/* The navigation menu links */
-.sidebar a, .sidebar img {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  text-align: center;
-  font-size: 25px;
-  display: block;
-  height: auto;
-  width: 55%;
-}
-
-.sidebar a{
-	color: rgba(219,104,36,1.00);
-	opacity: 1;
-}
-.sidebar img:hover {
-  color: #f1f1f1;
-  opacity: 0.5;
-}
-
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
- /*  -------------------   Buttons  -----------------------	*/
-.openbtn {
-  position: fixed;
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  padding: 10px 15px;
-  border: none;
-  color: rgba(219,104,36,1.00);
-  margin-top: 8px;
-  margin-left: 8px;
-}
-.openbtn:hover {
-  background-color: #444;
-}
-
-.scrolldown{
-	color: black;
-	padding: 10px 15px;
-	border: none;
-	font-size: 22px;
-}
-
-.scrolldown {
-  padding-top: 20px;
-  padding-bottom: 0px;
-  animation: MoveUpDown 1.5s ease infinite;
-  text-decoration: none;
-}
-
-@keyframes MoveUpDown {
-  0%, 100% {
-    margin-top: 20px;
-    margin-bottom: 0px;
-  }
-  20% {
-    margin-top: 0px;
-    margin-bottom: 30px;
-  }
-}
-
-.show{
-	opacity: 1;
-	transition: 0.5s;
-}
-
-.mid {
-	opacity: 0.5;
-	transition: 0.5s;
-}
-
-.hide{
-	opacity: 0;
-	transition: 0.5s;
+main {
+  display:grid;
+  grid-template-columns: main;
 
 }
 
- /*  -------------------   Some media Query  -----------------------	*/
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
-}
 
-@media screen and (max-height: 450px) {
-	.parallax {width:50%;}
-}
