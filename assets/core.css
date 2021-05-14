@@ -17,16 +17,26 @@ html{
 body, html {
   height: 100%; 
   margin:0;padding:0;border:0;
+  background-color: #242424;
+  color: white;
 }
 
 body {
-	margin:0;
+  min-width: 100vw;
+  min-height:100vh;
+  display: flex;
+  flex-flow: column;
+  font-family: 'Crimson Text', serif;
 }
 
-main {
-  display:grid;
-  grid-template-columns: main;
+body > div {
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+}
 
+#main {
+  flex-grow: 1;
 }
 
 
