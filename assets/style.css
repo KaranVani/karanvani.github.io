@@ -1,13 +1,3 @@
-html {
-  padding: 0px;
-  margin: 0px;
-  max-width: 100%;
-  max-height: 100%;
-  width: 100%;
-  height: 100%;
-  background-color: #a2a2a2;
-}
-
 body {
   width: 100vw;
   height: 100vh;
@@ -33,8 +23,8 @@ body .container section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100vw;
-  height: 100vh;
+  width: 99vw;
+  height: 99vh;
   scroll-snap-align: start;
 }
 
@@ -55,6 +45,6 @@ body .container section:nth-of-type(3) {
 
 body .container section h1 {
   font-family: Arial, Helvetica, sans;
-  font-size: 10em;
+  font-size: 6em;
 }
 /*# sourceMappingURL=style.css.map */
