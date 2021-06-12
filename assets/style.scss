@@ -1,3 +1,7 @@
+$backgroundcolorsec1: #181818;
+$backgroundcolorsec2: #202020;
+$backgroundcolorsec3: #222222;   
+
 body {
     width: 100vw;
     height: 100vh;
@@ -23,14 +27,14 @@ body {
             scroll-snap-align: start;
 
             &:nth-of-type(1){
-                background-color: #181818;
+                background-color: $backgroundcolorsec1;
                 color: cyan;
             }
             &:nth-of-type(2){
-                background-color: #202020;
+                background-color: $backgroundcolorsec2;
                 color: blue;
             } &:nth-of-type(3){
-                background-color: #222222;
+                background-color: $backgroundcolorsec3;
                 color: yellow;
             }
 
