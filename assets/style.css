@@ -1,50 +1,32 @@
-body {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-}
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-body .container {
-  width: 100%;
-  height: 100%;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-}
+:root {
+  --header-height:  3rem;
 
-body .container section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 99vw;
-  height: 99vh;
-  scroll-snap-align: start;
-}
+  /*colors*/
+  --hue-color: 250;
 
-body .container section:nth-of-type(1) {
-  background-color: #181818;
-  color: cyan;
-}
+  --first-color: hsl(var(--hue-color), 69%, 61%);
+  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+  --title-color: hsl(var(--hue-color), 8%, 15%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+  --input-color: hsl(var(--hue-color), 70%, 96%);
+  --body-color: hsl(var(--hue-color), 60%, 99%);
+  --container-color: #FFF;
+  
+  /*font*/
+  --body-font:'Poppins', sans-serif; ;
 
-body .container section:nth-of-type(2) {
-  background-color: #202020;
-  color: blue;
-}
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem; 
+  --h3-font-size: 1.125rem;
+  --normail-font-size: ;
+  --small-font-size: ;
+  --smaller-font-size:
 
-body .container section:nth-of-type(3) {
-  background-color: #222222;
-  color: yellow;
 }
-
-body .container section h1 {
-  font-family: Arial, Helvetica, sans;
-  font-size: 6em;
-}
-/*# sourceMappingURL=style.css.map */
