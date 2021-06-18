@@ -431,7 +431,7 @@ img{
 
 .skills__bar,
 .skills__percentage{
-  height: 5px;
+  
   border-radius: .25rem;
 }
 
@@ -463,3 +463,18 @@ img{
 .skills__javascript{
   width: 20%;
 }
+
+.skills__close .skills__list{
+  height:0;
+  overflow: hidden; 
+}
+
+.skills__open .skills__list{
+  height:max-content;
+  margin-bottom: var(--mb-2-5);
+}
+
+.skills__open .skills__arrow{
+  transform: rotate(-180deg);
+}
+
