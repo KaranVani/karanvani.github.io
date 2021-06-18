@@ -9,9 +9,9 @@ typewriter.typeString('hacking machines!')
     .pauseFor(2500)
     .deleteAll()
     .typeString('writing code that works!')
-    .pauseFor(2500)
-    .deleteChars(16)
-    .typeString('<strong>code...</strong>')
+    .pauseFor(1000)
+    .deleteAll(2)
+    .typeString('<strong>writing code...</strong>')
     .pauseFor(2500)
     .start();
 
