@@ -1,3 +1,20 @@
+/*typewrite effect */
+var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString('hacking machines!')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('writing code that works!')
+    .pauseFor(2500)
+    .deleteChars(16)
+    .typeString('<strong>code...</strong>')
+    .pauseFor(2500)
+    .start();
+
 /*Hidden menu*/
 const navMenu = document.getElementById('nav-menu'),
         navToggle = document.getElementById('nav-toggle'),

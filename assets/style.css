@@ -312,6 +312,9 @@ img{
   font-size: 1.25rem;
 }
 
+#app{
+  color: var(--first-color);
+}
 /*********buttons*********/
 .button{
   display:inline-block;
