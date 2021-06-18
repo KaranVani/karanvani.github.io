@@ -27,7 +27,7 @@
   --h3-font-size: 1.125rem;
   --normail-font-size: .938rem;
   --small-font-size: .813rem;
-  --smaller-font-size: 75rem;
+  --smaller-font-size: .75rem;
 
   --font-medium: 500;
   --font-semi-bold: 600;
@@ -335,4 +335,45 @@ img{
 .button--flex{
   display: inline-flex;
   align-items: center;
+}
+
+/* About */
+
+
+.about__img{
+  width: 200px;
+  border-radius: .5rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.about__description{
+  text-align: center;
+  margin-bottom: var(--mb-0-2-5);
+}
+
+.about__info{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-0-2-5);
+}
+
+.about__info-title{
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+.about__info-name{
+  font-size:var(--smaller-font-size);
+}
+
+.about__info-title,
+.about__info-name{
+  display: block;
+  text-align: center;
+}
+
+.about__buttons{
+  display:flex;
+  justify-content: center;
 }
