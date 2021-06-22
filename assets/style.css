@@ -36,11 +36,11 @@
   --mb-0-25: .25rem;
   --mb-0-5: .5rem;
   --mb-0-75: .75rem;
-  --mb-0-1: 1rem;
-  --mb-0-1-5: 1.5rem;
-  --mb-0-2: 2rem;
-  --mb-0-2-5: 2.5rem;
-  --mb-0-3: 3rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
   
   /*index*/
   --z-tooltip: 10;
@@ -68,7 +68,7 @@
 /*main*/
 * {
   box-sizing: border-box;
-  padding: 2px;
+  padding: 0;
   margin: 0;
 }
 
@@ -128,7 +128,7 @@ img{
 /*website layout*/
 .container{
   max-width: 768px;
-  margin-left: var(--mb--1-5);
+  margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
 
@@ -280,7 +280,7 @@ img{
 }
 
 .home__description{
-  margin-bottom: var(--mb-0-2);
+  margin-bottom: var(--mb-2);
 }
 
 .home__scroll{
@@ -335,6 +335,15 @@ img{
   transition: .3s;
 }
 
+.button--white{
+  background-color: #FFF;
+  color: var(--first-color);
+}
+
+.button--white:hover{
+  background-color: #FFF;
+}
+
 .button--flex{
   display: inline-flex;
   align-items: center;
@@ -352,13 +361,13 @@ img{
 
 .about__description{
   text-align: center;
-  margin-bottom: var(--mb-0-2-5);
+  margin-bottom: var(--mb-2-5);
 }
 
 .about__info{
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: var(--mb-0-2-5);
+  margin-bottom: var(--mb-2-5);
 }
 
 .about__info-title{
@@ -395,7 +404,7 @@ img{
   background-color: transparent;
   color: var(--first-color-alt);
 }
-/* Skills */
+/* ---------------------Skills------------------- */
 .skills__container{
   row-gap: 0;
 }
@@ -403,7 +412,7 @@ img{
 .skills__header{
   display: flex;
   align-items: center;
-  margin-bottom: var(--mb-0-2-5);
+  margin-bottom: var(--mb-2-5);
   cursor:pointer;
 }
 
@@ -448,7 +457,7 @@ img{
 
 .skills__bar,
 .skills__percentage{
-  
+  height: 5px;
   border-radius: .25rem;
 }
 
@@ -552,7 +561,7 @@ img{
   width: 1px;
   height: 100%;
   background-color: var(--first-color);
-  transform: translate(4px, -7px);
+  transform: translate(6px, -7px);
 }
 
 .qualification [data-content]{
@@ -726,5 +735,34 @@ portfolio__img{
 .swiper-button-next,
 .swiper-pagination-bullet{
   outline: none;
+}
+
+/* CONTACT ME FOR PROJECT OR SERVICES */
+.project{
+  text-align: center;
+}
+
+.project__bg{
+  background-color: var(--first-color);
+  padding: 3rem;
+}
+
+.project__title{
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-0-75);
+}
+
+.project__description{
+  margin-bottom: var(--mb-1-5);
+}
+
+.project__title,
+.project__description{
+  color: #fff;
+}
+
+.project__img{
+  width: 232px;
+  justify-self: center;
 }
 
