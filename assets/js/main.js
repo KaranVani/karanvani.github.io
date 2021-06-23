@@ -5,13 +5,13 @@ var typewriter = new Typewriter(app, {
     loop: true
 });
 
-typewriter.typeString('hacking machines!')
+typewriter.typeString(' hacking machines!')
     .pauseFor(2500)
     .deleteAll()
-    .typeString('writing code that works!')
+    .typeString(' writing code that works!')
     .pauseFor(1000)
     .deleteAll(2)
-    .typeString('<strong>writing code...</strong>')
+    .typeString('<strong> writing code...</strong>')
     .pauseFor(2500)
     .start();
 

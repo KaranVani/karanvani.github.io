@@ -271,7 +271,7 @@ img{
 /************************home*********************************/
 
 .home__container{
-  gap:1rem;
+  gap: 1rem;
 }
 .home__content{
   grid-template-columns: .5fr 3fr;
@@ -1129,7 +1129,7 @@ portfolio__img{
   }
 
   .home__container{
-    row: gap 5rem;
+    row-gap: 5rem;
   }
   .home__content{
     padding-top: 5.5rem;
