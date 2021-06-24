@@ -1012,7 +1012,7 @@ portfolio__img{
   .home__content{
     grid-template-columns: .25fr .3fr;
   }
-  .home__blobl{
+  .home__blob{
     width: 180px;
   }
   .skills__titles{
@@ -1052,7 +1052,7 @@ portfolio__img{
 
 /* medium screens */
 
-@media screen and (min-wdith: 568px){
+@media screen and (min-width: 568px){
   .home__content{
     grid-template-columns: max-content 1fr 1fr;
   }
